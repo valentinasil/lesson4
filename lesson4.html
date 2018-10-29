@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lesson4</title>
+<style type="text/css">
+*{
+	box-sizing: border-box;
+
+}
+html,body{
+	margin:0;
+	padding:0;
+}
+body{
+	background:blue;
+	}
+.container{
+background:black;
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns:2fr 1fr 1fr 2fr;
+	grid-template-rows: 1fr 1fr 1fr; 
+	grid-template-areas:
+	"p1 p1 p1 p1"
+	"p2 p3 p4 p5"
+	"p6 p6 p6 p6";
+
+	grid-gap:10px; 
+	padding:10px;
+}	
+.item{
+	background:blue;
+	min-height: 100px;
+	min-width: 100px;
+}
+
+#photo1{
+	grid-area:p1;
+	background:url(https://s3.envato.com/files/69193255/16_HalloweenCemetry01.jpg);
+	background-size:cover;
+	background-position: center;}
+#photo2{
+	grid-area:p2;
+	background:url(https://static1.squarespace.com/static/573c58af8259b5b384b39bc3/59d1581f59cc681f4add5970/59f73c58085229e5438f6af8/1518618299726/1164e12f9f9eb5cdac8d979196237ee1f38b60c5.gif?format=500w);
+	background-size:cover;
+	background-position: center;}
+
+	#photo3{
+	grid-area:p3;
+	background:url(http://pa1.narvii.com/6241/a84b1275e18ab2cdb7031379ee4110e6dde37a1d_00.gif);
+	background-size:cover;
+	background-position: center;}
+
+	#photo4{
+	grid-area:p4;
+	background:url(https://66.media.tumblr.com/2a748d072f55e4cab4983aba6eb52579/tumblr_ndu37nHhD11qzugy0o2_r1_500.gif);
+	background-size:cover;
+	background-position: center;}
+
+#photo5{
+	grid-area:p5;
+	background:url(https://i.imgur.com/JWf1KRI.gif);
+	background-size:cover;
+	background-position: center;}
+
+#photo6{
+	grid-area:p6;
+	background:url(http://www.manotohamsafar.com/img/2016/10/orange-pumpkins-with-skull-cross-and-blue-background-lighting.jpg);
+	background-size:cover;
+	background-position: center;}
+
+
+
+</style>
+
+</head>
+<body>
+<div class="container">
+<div class="item" id="photo1" > </div>
+<div class="item" id="photo2" > </div>
+<div class="item" id="photo3" > </div>
+<div class="item" id="photo4" > </div>
+<div class="item" id="photo5" > </div>
+<div class="item" id="photo6" > </div>
+
+</div>
+
+</body>
+</html>
